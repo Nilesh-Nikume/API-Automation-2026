@@ -65,7 +65,7 @@ class TestCRUDBooking(object):
         )
         # Verification here & more
         verify_json_key_for_not_null(response.json()["firstname"])
-        verify_response_key(response.json()["firstname"], "Nilesh")
+        verify_response_key(response.json()["firstname"], "Amit")
         verify_response_key(response.json()["lastname"], "Brown")
         verify_json_key_for_not_null(response.json()["lastname"])
         verfiy_http_status_code(response_data=response, expect_data=200)
